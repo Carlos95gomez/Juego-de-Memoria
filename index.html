@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Memoria Militar</title>
+    <!-- Enlazamos la hoja de estilos -->
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <!-- Encabezado principal -->
+    <header>
+        <h1>Juego de Memoria Militar</h1>
+    </header>
+    
+    <!-- Barra de navegación con botones de categorías -->
+    <nav>
+        <button onclick="cambiarCategoria('aircraft')">Aeronaves</button>
+        <button onclick="cambiarCategoria('ships')">Barcos</button>
+        <button onclick="cambiarCategoria('tanks')">Blindados</button>
+    </nav>
+
+    <!-- Panel de información del juego -->
+    <div class="info-juego">
+        <div>Tiempo: <span id="temporizador">0:00</span></div>
+        <div>Movimientos: <span id="movimientos">0</span></div>
+        <div>Pares encontrados: <span id="parejas">0</span></div>
+    </div>
+
+    <!-- Contenedor principal del juego donde se crearán las cartas -->
+    <div class="contenedor-juego" id="tableroJuego"></div>
+
+    <footer class="footer">
+        <div class="social-icons">
+            <a href="https://github.com/Carlos95gomez" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.facebook.com/carlos.arevalo.7583?mibextid=0xEtH9Zl4Mjgdltx" target="_blank">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/carlos-arevalo-488438258" target="_blank">
+                <i class="fab fa-linkedin"></i>
+            </a>
+        </div>
+        <br><p>Creado por Carlos Arévalo</p>
+    </footer>
+
+    <!-- Enlazamos el archivo de JavaScript -->
+    <script src="funciones.js"></script>
+</body>
+</html>
